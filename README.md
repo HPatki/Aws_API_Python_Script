@@ -1,2 +1,3 @@
 # Aws_API_Python_Script
-Python script for creating VPC and configuring it with InternetGateway, RouteTables et all
+
+Python classes encapulsating AWS API. The classes can be combined for creating, modifying, monitoring & reporting regards various AWS resources
