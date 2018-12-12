@@ -1,7 +1,7 @@
-from classes import IAM
+from classes.infra.security import IAM
 
 iam = IAM.IAM()
-policies = iam.listPolicies()
+policies = iam.listPolicies ()
 allPolicies = policies['Policies']
 for indvPolicy in allPolicies:
     print (indvPolicy)
