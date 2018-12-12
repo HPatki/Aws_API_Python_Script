@@ -1,6 +1,6 @@
 import boto3
-import VPC
-import InternetGateway
+from classes.infra.network import VPC
+from classes.infra.network import InternetGateway
 
 class EC2:
 

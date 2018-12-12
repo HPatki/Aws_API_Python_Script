@@ -1,5 +1,5 @@
 import boto3
-import RouteTable
+from classes.infra.network  import RouteTable
 
 class VPC:
 
@@ -15,5 +15,5 @@ class VPC:
     def detachIGW (self,igw):
         self.__vpc.detach_internet_gateway (InternetGatewayId=igw.getId())
 		
-	def createRouteTable(self,dryRun=False):
-		return RouteTable.RouteTable(self.__vpc.create_route_table (dryRun))
+    def createRouteTable(self,dryRun=False):
+        return RouteTable.RouteTable(self.__vpc.create_route_table (dryRun))
